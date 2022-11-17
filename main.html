@@ -12,7 +12,7 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <nav class="flex center">
+    <nav class="flex center space-between width">
         <img src="images/logos/circle.svg" alt="Circle Logo">
         <ul class="nav-menu list flex">
             <li><a href="main.html"></a>Home</li>
@@ -24,16 +24,86 @@
             <span></span>
             <span></span>
         </button>
-        <ul class="contact-us list">
-            <li><a href="contact-us"></a>Contact Us</li>
-        </ul>
+        <button class="contact-us">
+            <a href="contact-us.html">Contact Us</a>
+        </button>
     </nav>
-    <header></header>
-    <div class="clients"></div>
-    <div class="recent-project"></div>
-    <div class="reviews"></div>
-    <div class="our-services"></div>
-    <div class="mail"></div>
+    <header class="flex width">
+        <div>
+            <h1>Empower Your Business With Stunning Design!</h1>
+            <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
+            <button><a href="">See our work</a></button>
+            <button class="contact-us">
+                <a href="">Get in touch</a>
+            </button>
+        </div>
+        <div>
+            <img src="images/hero-section/card-1.png" alt="Card 1 Hero Section">
+            <img src="images/hero-section/hero-image.png" alt="Hero Image">
+            <img src="images/hero-section/card-2.png" alt="Card 2 Hero Section">
+        </div>
+    </header>
+    <div class="clients flex space-between width">
+        <img src="images/logos/airbnb-logo.svg" alt="Airbnb Logo">
+        <img src="images/logos/google-logo.svg" alt="Google Logo">
+        <img src="images/logos/microsoft-logo.svg" alt="Microsoft Logo">
+        <img src="images/logos/fedex-logo.svg" alt="Fedex Logo">
+        <img src="images/logos/amazon-logo.svg" alt="Amazon Logo">
+    </div>
+    <div class="recent-project width">
+        <h2>Recent Projects</h2>
+        <div class="flex space-between">
+            <article class="projects">
+                <img class="article-image" src="images/projects-section/1.jpg" alt="Project 1">
+                <div class="article-text">
+                    <h3>Simplify</h3>
+                    <p>UI Design & App Development</p>
+                    <button class="learn-more">
+                        <a href="">Learn More</a>
+                    </button> 
+                </div>
+            </article>
+            <article class="projects">
+                <img class="article-image" src="images/projects-section/1.jpg" alt="Project 1">
+                <div class="article-text">
+                    <h3>Simplify</h3>
+                    <p>UI Design & App Development</p>
+                    <button class="learn-more">
+                        <a href="">Learn More</a>
+                    </button> 
+                </div>
+            </article>
+            <article class="projects">
+                <img class="article-image" src="images/projects-section/1.jpg" alt="Project 1">
+                <div class="article-text">
+                    <h3>Simplify</h3>
+                    <p>UI Design & App Development</p>
+                    <button class="learn-more">
+                        <a href="">Learn More</a>
+                    </button> 
+                </div>
+            </article>
+        </div>
+    </div>
+    <div class="reviews wide-width">
+        <div>
+            <h3>Hear What Our Clients Have to Say</h3>
+            <p>“Circle helped us through every stage of our startup. We really enjoyed working with you.”</p>
+            <div class="flex center">
+                <img id="profile" src="images/testimonial-section/profile.png" alt="Testimonial Profile">
+                <div>
+                    <h4>Kristin Watson</h4>
+                    <p>Booking.com</p>
+                </div>
+            </div>
+        </div>
+        <img class="emojis" id="emoji-1" src="images/testimonial-section/memoji-1.png" alt="Testimonial Emoji 1">
+        <img class="emojis" id="emoji-2" src="images/testimonial-section/memoji-2.png" alt="Testimonial Emoji 2">
+        <img class="emojis" id="emoji-3" src="images/testimonial-section/memoji-3.png" alt="Testimonial Emoji 3">
+        <img class="emojis" id="emoji-4" src="images/testimonial-section/memoji-4.png" alt="Testimonial Emoji 4">
+    </div>
+    <div class="our-services width"></div>
+    <div class="mail wide-width"></div>
     <footer></footer>
 </body>
 </html>
