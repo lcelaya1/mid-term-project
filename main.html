@@ -12,35 +12,37 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <nav class="flex center space-between width">
-        <img src="images/logos/circle.svg" alt="Circle Logo">
-        <ul class="nav-menu list flex">
-            <li><a href="main.html"></a>Home</li>
-            <li><a href="projects.html"></a>Projects</li>
-            <li><a href="services.html"></a>Services</li>
-        </ul>
-        <button class="menu-mobile" hidden>
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <button class="contact-us">
-            <a href="contact-us.html">Contact Us</a>
-        </button>
+    <nav class="width">
+        <div class="flex center space-between">
+            <img id="circle" src="images/logos/circle.svg" alt="Circle Logo">
+            <ul class="nav-menu list flex">
+                <li><a href="main.html"></a>Home</li>
+                <li><a href="projects.html"></a>Projects</li>
+                <li><a href="services.html"></a>Services</li>
+            </ul>
+            <button class="menu-mobile" hidden>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button class="contact-us">
+                <a href="contact-us.html">Contact Us</a>
+            </button>
+        </div> 
     </nav>
-    <header class="flex width">
-        <div>
+    <header class="flex width center header">
+        <div class="hero-text">
             <h1>Empower Your Business With Stunning Design!</h1>
             <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
-            <button><a href="">See our work</a></button>
+            <button id="see-work"><a href="">See our work</a></button>
             <button class="contact-us">
                 <a href="">Get in touch</a>
             </button>
         </div>
         <div>
-            <img src="images/hero-section/card-1.png" alt="Card 1 Hero Section">
-            <img src="images/hero-section/hero-image.png" alt="Hero Image">
-            <img src="images/hero-section/card-2.png" alt="Card 2 Hero Section">
+            <img class="cards" id="card-1" src="images/hero-section/card-1.png" alt="Card 1 Hero Section">
+            <img id="hero-image" src="images/hero-section/hero-image.png" alt="Hero Image">
+            <img class="cards" id="card-2" src="images/hero-section/card-2.png" alt="Card 2 Hero Section">
         </div>
     </header>
     <div class="clients flex space-between width">
