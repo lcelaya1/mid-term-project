@@ -1,3 +1,5 @@
+/*General Rules*/
+
 .flex {
     display: flex;
 }
@@ -24,10 +26,17 @@ a {
     margin: auto;
 }
 
+.wide-width {
+    max-width: 1320px;
+    margin: 70px auto 0px auto;
+}
+
 body {
     background-color: #F2F4FC;
     font-family: 'Roboto', sans-serif;
 }
+
+/*Navigation*/
 
 nav {
     font-weight: 500;
@@ -122,10 +131,14 @@ h1 {
     height: 637px;
 }
 
+/*Clients*/
+
 .clients {
     margin-top: 130px;
     margin-bottom: 200px;
 }
+
+/*Recent Projects*/
 
 .recent-project {
     margin-top: 200px;
@@ -174,10 +187,7 @@ h2 {
     object-fit: cover;
 }
 
-.wide-width {
-    max-width: 1320px;
-    margin: 70px auto 0px auto;
-}
+/*Reviews*/
 
 .reviews {
     background-image: url(images/testimonial-section/orbit.png);
@@ -185,6 +195,21 @@ h2 {
     background-color: #292E47;
     height: 622px;
     text-align: center;
+    padding: 51px;
+}
+
+.reviews-text > h3 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 69px 0 104px 0;
+}
+
+.reviews-text > p {
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFC600;
+    padding: 0 370px;
 }
 
 #profile {
@@ -199,12 +224,37 @@ h2 {
     width: 150px;
 }
 
+/*Our Services*/
+
+/*Email*/
+
+/*Footer*/
+
 
 @media (max-width: 480px) {
+    /*General Rules*/
+    
     body {
         max-width: 400px;
     }
+
+    /*Navigation*/
+    
     .contact-us {
         display: none;
     }
+
+    /*Header*/
+
+    /*Clients*/
+
+    /*Recent Projects*/
+
+    /*Reviews*/
+
+    /*Our Services*/
+
+    /*Email*/
+
+    /*Footer*/
 }
