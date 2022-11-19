@@ -26,14 +26,26 @@ a {
     margin: auto;
 }
 
-.wide-width {
-    max-width: 1320px;
-    margin: 70px auto 0px auto;
-}
-
 body {
     background-color: #F2F4FC;
     font-family: 'Roboto', sans-serif;
+    max-width: 1320px;
+    margin: auto;
+}
+
+/*Headings*/
+
+h1 {
+    font-size: 60px;
+    color: #292E47;
+    line-height: 130%;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #292E47;
 }
 
 /*Navigation*/
@@ -80,15 +92,10 @@ nav > div {
     font-size: 17px;
 }
 
+/*Hero Section*/
+
 .header {
     margin-top: 100px;
-}
-
-h1 {
-    font-size: 60px;
-    color: #292E47;
-    line-height: 130%;
-    margin-bottom: 30px;
 }
 
 .hero-text > p {
@@ -111,6 +118,12 @@ h1 {
    color: #6B708D; 
 }
 
+.image-cards {
+    position: relative;
+    width: 570px;
+    height: 650px;
+}
+
 .cards {
     width: 294px;
     height: 315px;
@@ -118,12 +131,13 @@ h1 {
 }
 
 #card-1 {
-    left: 650px;
+    top: 0%;
+    left: -18%;
 }
 
 #card-2 {
-    right: 80px;
-    top: 670px;
+    right: -25%;
+    top: 73%;
 }
 
 #hero-image {
@@ -145,29 +159,28 @@ h1 {
     margin-bottom: 200px;
 }
 
-h2 {
+.recent-project > h2 {
     margin-bottom: 70px;
-    font-size: 40px;
-    font-weight: bold;
-    color: #292E47;
 }
 
-.projects {
+.projects, .services {
     background-color: white; 
 }
 
 .article-text {
-    padding: 28px;
+    padding: 30px;
 }
 
 .article-text > h3 {
     margin: 0;
     font-size: 24px;
+    color: #292E47;
 }
 
 .article-text > p {
     margin: 10px 0 54px 0;
     color: #6B708D;
+    line-height: 150%;
 }
 
 .learn-more {
@@ -191,25 +204,13 @@ h2 {
 
 .reviews {
     background-image: url(images/testimonial-section/orbit.png);
-    background-size: cover;
-    background-color: #292E47;
-    height: 622px;
+    background-size: contain;
+    background-position: center;
+    background-color: #292E47;    
+    height: 500px;
     text-align: center;
-    padding: 51px;
-}
-
-.reviews-text > h3 {
-    color: white;
-    font-size: 40px;
-    font-weight: bold;
-    margin: 69px 0 104px 0;
-}
-
-.reviews-text > p {
-    font-weight: 500;
-    font-size: 24px;
-    color: #FFC600;
-    padding: 0 370px;
+    padding: 51px 0px;
+    margin-bottom: 209px;
 }
 
 #profile {
@@ -219,16 +220,121 @@ h2 {
     margin-right: 10px;
 }
 
+.section-emojis {
+    position: relative;
+    padding-top: 40px;
+    height: 458px;
+}
+
 .emojis {
     position: absolute;
     width: 150px;
 }
 
+.top-emojis {
+    top: 0%;
+}
+
+#emoji-1, #emoji-3 {
+    left: 7%;
+}
+
+#emoji-2, #emoji-4 {
+    left: 81%;
+}
+
+.bottom-emojis {
+    bottom: 0%;
+}
+
+.reviews-text {
+    width: 621px;
+    margin: auto;
+}
+
+.reviews-text > h2 {
+    color: white;
+    margin-bottom: 104px;
+}
+
+.reviews-text > p {
+    font-weight: 500;
+    font-size: 24px;
+    color: #FFC600;
+    padding: 0 20px;
+    margin-bottom: 102px;
+}
+
+.testimonial {
+    justify-content: center;
+}
+
+.testimonial-text > h4 {
+    margin: 0;
+}
+
+.testimonial-text > p {
+    margin: 0;
+}
+
+
 /*Our Services*/
+
+.our-services {
+    margin-bottom: 200px;
+}
+
+.our-services > h2 {
+    margin-bottom: 70px;
+}
+
+.services {
+    padding: 40px 30px 30px 30px;
+    width: 280px;
+}
+
+.services > .article-text {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+.background-icon {
+    background-color: #ECF7FF;
+    padding: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
 
 /*Email*/
 
+.email {
+    background-color: #FFC600;
+    height: 500px;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 170px;
+}
+
+.email > h2 {
+    margin: 0 0 20px 0;
+}
+
+.email > p {
+    margin: 0 0 50px 0;
+}
+
+.subscribe-email {
+    justify-content: center;
+}
+
 /*Footer*/
+
+.footer {
+    margin-bottom: 142px;
+}
 
 
 @media (max-width: 480px) {
