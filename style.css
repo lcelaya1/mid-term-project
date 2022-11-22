@@ -111,7 +111,7 @@ nav > div {
     border: none;
     font-size: 17px;
     padding: 0;
-    margin-right: 20px;
+    margin-left: 20px;
 }
 
 #see-work > a {
@@ -269,12 +269,20 @@ nav > div {
     justify-content: center;
 }
 
+.testimonial-text {
+    text-align: start;
+}
+
 .testimonial-text > h4 {
     margin: 0;
+    color: #43D2FF;
+    font-weight: 100;
 }
 
 .testimonial-text > p {
     margin: 0;
+    color: #F2F4FC;
+    font-size: 13px;
 }
 
 
@@ -330,12 +338,58 @@ nav > div {
     justify-content: center;
 }
 
+.email-input {
+    background-color: #ECF7FF;
+    padding: 25px 0 25px 30px;
+    width: 368px;
+    margin-right: 20px;
+}
+
+.email-input input {
+    border: none;
+    background-color: #ECF7FF;
+    font-size: 17px;
+}
+
+.email-input ::placeholder {
+    color: #292E47;
+}
+
+#envelope-icon {
+    width: 30px;
+    padding-right: 10px;
+}
+
+#subscribe-button {
+    background-color: #072AC8;
+    border: none;
+    padding: 29px 61px;
+    color: #F2F4FC;
+    font-size: 17px;
+}
+
 /*Footer*/
 
 .footer {
     margin-bottom: 142px;
 }
 
+#footer-p {
+    color: #6B708D;
+    font-size: 17px;
+    width: 260px;
+    line-height: 150%;
+}
+
+.footer-menu {
+    padding: 0;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#footer-nav {
+    width: 435px;
+}
 
 @media (max-width: 480px) {
     /*General Rules*/
@@ -344,21 +398,70 @@ nav > div {
         max-width: 400px;
     }
 
+    .width {
+        max-width: 340px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
     /*Navigation*/
-    
-    .contact-us {
-        display: none;
+
+    nav > div {
+        padding: 18px 0;
+        margin-top: 0;
     }
 
     /*Header*/
+
+    .header {
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+
+    .cards {
+        display: none;
+    }
+
+    .image-cards {
+        align-items: center;
+    }
+
+    #hero-image {
+        width: auto;
+    }
+
+    .hero-text > p {
+        font-size: 17px;
+        width: auto;
+    }
+
+    .buttons-hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #see-work {
+        margin-right: 0;
+    }
 
     /*Clients*/
 
     /*Recent Projects*/
 
+    .recent-project > div {
+        flex-direction: column;
+    }
+
     /*Reviews*/
 
     /*Our Services*/
+
+    .our-services > div {
+        flex-direction: column;
+    }
 
     /*Email*/
 

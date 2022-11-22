@@ -35,10 +35,14 @@
         <div class="hero-text">
             <h1>Empower Your Business With Stunning Design!</h1>
             <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
-            <button id="see-work"><a href="">See our work</a></button>
-            <button class="contact-us">
-                <a href="">Get in touch</a>
-            </button>
+            <div class="buttons-hero">
+                <button class="contact-us">
+                    <a href="">Get in touch</a>
+                </button> 
+                <button id="see-work"><a href="">See our work</a></button>
+                
+            </div>
+            
         </div>
         <div class="image-cards">
             <img class="cards" id="card-1" src="images/hero-section/card-1.png" alt="Card 1 Hero Section">
@@ -152,26 +156,29 @@
         <h2>Do you have any questions?</h2>
         <p>Let us help you!</p>
         <div class="subscribe-email flex center">
-            <div>
-                <i class="fa fa-envelope-o fa-fw" aria-hidden="true"></i>
+            <div class="email-input flex center">
+                <img id="envelope-icon" src="images/newsletter/icon/mail.svg" alt="Envelope Icon">
                 <input type="email" name="Email" id="" placeholder="Enter your email">
             </div>
-            
-            <input type="button" value="Subscribe">
+            <input id="subscribe-button" type="button" value="Subscribe">
         </div>
     </div>
     <footer class="flex space-between width footer">
         <div>
             <img id="circle" src="images/logos/circle.svg" alt="Circle Logo">
-            <p>2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+            <p id="footer-p">2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
         </div>
-        <nav>
-            <ul class="nav-menu list flex">
+        <nav id="footer-nav" class="flex space-between">
+            <ul class="nav-menu footer-menu list flex">
                 <li><a href="#"></a>Team</li>
-                <li><a href="services.html"></a>Services</li>
-                <li><a href="#"></a>About Us</li>
                 <li><a href="#"></a>Press</li>
+            </ul>
+            <ul class="nav-menu footer-menu list flex">
+                <li><a href="services.html"></a>Services</li>
                 <li><a href="projects.html"></a>Projects</li>
+            </ul>
+            <ul class="nav-menu footer-menu list flex">
+                <li><a href="#"></a>About Us</li>
                 <li><a href="#"></a>Privacy Policy</li>
             </ul>
         </nav>
