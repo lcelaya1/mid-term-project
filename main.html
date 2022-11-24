@@ -36,7 +36,7 @@
             <h1>Empower Your Business With Stunning Design!</h1>
             <p>Circle is a digital design and development studio. We design and develop astonishing websites and mobile apps.</p>
             <div class="buttons-hero">
-                <button class="contact-us">
+                <button class="get-in-touch">
                     <a href="">Get in touch</a>
                 </button> 
                 <button id="see-work"><a href="">See our work</a></button>
@@ -50,12 +50,16 @@
             <img class="cards" id="card-2" src="images/hero-section/card-2.png" alt="Card 2 Hero Section">
         </div>
     </header>
-    <div class="clients flex space-between width">
-        <img src="images/logos/airbnb-logo.svg" alt="Airbnb Logo">
-        <img src="images/logos/google-logo.svg" alt="Google Logo">
-        <img src="images/logos/microsoft-logo.svg" alt="Microsoft Logo">
-        <img src="images/logos/fedex-logo.svg" alt="Fedex Logo">
-        <img src="images/logos/amazon-logo.svg" alt="Amazon Logo">
+    <div class="clients flex">
+        <div class="clients-1 flex">
+            <img src="images/logos/airbnb-logo.svg" alt="Airbnb Logo">
+            <img src="images/logos/google-logo.svg" alt="Google Logo">
+        </div>
+        <div class="clients-1 flex">
+            <img src="images/logos/microsoft-logo.svg" alt="Microsoft Logo">
+            <img src="images/logos/fedex-logo.svg" alt="Fedex Logo">
+        </div>
+        <img id="amazon-logo" src="images/logos/amazon-logo.svg" alt="Amazon Logo">
     </div>
     <div class="recent-project width">
         <h2>Recent Projects</h2>
@@ -153,15 +157,18 @@
         </div>
     </div>
     <div class="email flex">
-        <h2>Do you have any questions?</h2>
-        <p>Let us help you!</p>
-        <div class="subscribe-email flex center">
-            <div class="email-input flex center">
-                <img id="envelope-icon" src="images/newsletter/icon/mail.svg" alt="Envelope Icon">
-                <input type="email" name="Email" id="" placeholder="Enter your email">
-            </div>
-            <input id="subscribe-button" type="button" value="Subscribe">
+        <div class="email-box">
+            <h2>Do you have any questions?</h2>
+            <p>Let us help you!</p>
+            <div class="subscribe-email flex">
+                <div class="email-input flex center">
+                    <img id="envelope-icon" src="images/newsletter/icon/mail.svg" alt="Envelope Icon">
+                    <input type="email" name="Email" id="enter-email" placeholder="Enter your email">
+                </div>
+                <input id="subscribe-button" type="button" value="Subscribe">
+            </div>  
         </div>
+        
     </div>
     <footer class="flex space-between width footer">
         <div>

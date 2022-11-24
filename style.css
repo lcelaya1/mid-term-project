@@ -77,17 +77,17 @@ nav > div {
     color: #43D2FF;
 }
 
-.contact-us {
+.contact-us, .get-in-touch {
     background-color: #072AC8;
     padding: 15px 30px;
     border: 0;
 }
 
-.contact-us:hover {
+.contact-us:hover , .get-in-touch:hover {
     background-color: #292E47;
 }
 
-.contact-us > a {
+.contact-us > a , .get-in-touch > a {
     color: white;
     font-size: 17px;
 }
@@ -150,6 +150,12 @@ nav > div {
 .clients {
     margin-top: 130px;
     margin-bottom: 200px;
+    justify-content: space-around;
+}
+
+.clients-1 {
+    width: 40%;
+    justify-content: space-around;
 }
 
 /*Recent Projects*/
@@ -406,6 +412,11 @@ nav > div {
         font-size: 30px;
     }
 
+    h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+
     /*Navigation*/
 
     nav > div {
@@ -418,7 +429,6 @@ nav > div {
     .header {
         margin-top: 20px;
         display: block;
-        text-align: center;
     }
 
     .cards {
@@ -427,10 +437,17 @@ nav > div {
 
     .image-cards {
         align-items: center;
+        height: auto;
     }
 
     #hero-image {
-        width: auto;
+        margin-top: 40px;
+        width: 340px;
+        height: auto;
+    }
+
+    .hero-text {
+        text-align: center;
     }
 
     .hero-text > p {
@@ -441,29 +458,144 @@ nav > div {
     .buttons-hero {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 
     #see-work {
-        margin-right: 0;
+        margin: 0;
+    }
+
+    .get-in-touch {
+        width: 160px;
+        margin-bottom: 20px;
     }
 
     /*Clients*/
+    .clients {
+        flex-direction: column;
+        align-items: center;
+        margin: 40px auto 0 auto;
+    }
+
+    .clients-1 {
+        width: 100%;
+        margin-bottom: 70px;
+    }
+
+    #amazon-logo {
+        display: none;
+    }
 
     /*Recent Projects*/
+    .recent-project {
+        margin: 0 auto;
+    }
+
+    .recent-project > h2 {
+        margin-bottom: 30px;
+    }
 
     .recent-project > div {
         flex-direction: column;
     }
 
+    .projects, .services {
+        margin-bottom: 30px;
+    }
+
     /*Reviews*/
 
+    .emojis {
+        display: none;
+    }
+    
+    .section-emojis {
+        padding: 0;
+        height: auto;
+    }
+
+    .reviews {
+        height: auto;
+        margin-bottom: 70px;
+    }
+
+    .reviews-text {
+        width: 340px;
+    }
+
+    .reviews-text > h2, .reviews-text > p {
+        margin: 0 auto 50px auto;
+        padding: 0;
+    }
+
     /*Our Services*/
+    .our-services {
+        margin-bottom: 30px;
+    }
+    
+    .our-services > h2 {
+        margin: 0 auto 30px auto;
+    }
 
     .our-services > div {
         flex-direction: column;
     }
 
+    .services {
+        padding-top: 30px;
+    }
+
+    .article-text > p {
+        margin-bottom: 30px;
+    }
+
     /*Email*/
+    .email {
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    .email-box {
+        width: 70%;
+    }
+
+    .email-box > h2 {
+        margin-top: 0;
+    }
+
+    .email-box > p {
+        margin: 0;
+    }
+
+    .subscribe-email {
+        flex-direction: column;
+    }
+
+    .email-input {
+        width: auto;
+        margin: 50px 0 20px 0;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    #enter-email {
+        width: 50%;
+    }
 
     /*Footer*/
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    #footer-p {
+        width: auto;
+        margin: 30px auto 20px auto;
+    }
+
+    #footer-nav {
+        width: auto;
+        text-align: center;
+    }
 }
