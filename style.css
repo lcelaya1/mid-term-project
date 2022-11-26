@@ -48,6 +48,11 @@ h2 {
     color: #292E47;
 }
 
+h3 {
+    font-size: 24px;
+    color: #292E47;
+}
+
 /*Navigation*/
 
 nav {
@@ -179,8 +184,6 @@ nav > div {
 
 .article-text > h3 {
     margin: 0;
-    font-size: 24px;
-    color: #292E47;
 }
 
 .article-text > p {
@@ -438,6 +441,37 @@ nav > div {
     align-items: flex-start;
 }
 
+/*Project Page*/
+
+.project-description {
+    margin-top: 140px;
+}
+
+.project-description > h1 {
+    margin: 0 auto 20px auto;
+}
+
+.project-description h3, p {
+    margin: 0;
+    color: #6B708D;
+    line-height: 150%;
+}
+
+.inner-project {
+    margin-bottom: 80px;
+}
+
+#completed-on {
+    color: #292E47;
+}
+
+.project-image {
+    width: 100%;
+    height: 444px;
+    object-fit: cover;
+    margin-bottom: 70px;
+}
+
 @media (max-width: 480px) {
     /*General Rules*/
     
@@ -664,5 +698,20 @@ nav > div {
 
     .form-submit {
         margin-bottom: 60px;
+    }
+
+    /*Project Page*/
+
+    .project-description {
+        margin: 0 auto 70px auto;
+    }
+
+    .project-description h3 {
+        font-size: 20px;
+    }
+
+    .inner-project {
+        flex-direction: column;
+        margin-bottom: 40px;
     }
 }
