@@ -397,6 +397,47 @@ nav > div {
     width: 435px;
 }
 
+/*Contact Us Form*/
+
+.contact-forms {
+    margin: 200px auto 150px auto;
+}
+
+.contact-forms > h1 {
+    margin-bottom: 80px;
+}
+
+.form-submit {
+    flex-direction: column;
+}
+
+.form-submit label {
+    font-size: 20px;
+    color: #6B708D;
+    margin-bottom: 10px;
+}
+
+.form-submit input {
+    background-color:#6b708d15;
+    padding: 20px;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.form-submit input::placeholder {
+    font-size: 17px;
+}
+
+.inner-form {
+    flex-direction: column;
+    width: 48%;
+}
+
+#message {
+    height: 200px;
+    align-items: flex-start;
+}
+
 @media (max-width: 480px) {
     /*General Rules*/
     
@@ -597,5 +638,31 @@ nav > div {
     #footer-nav {
         width: auto;
         text-align: center;
+    }
+
+    /*Contact Us Form*/
+
+    .contact-forms {
+        margin: 0 auto;
+    }
+
+    .contact-forms > h1 {
+        margin: 0 auto 40px auto;
+    }
+
+    .form-submit > div {
+        flex-direction: column;
+    }
+
+    .inner-form {
+        width: 100%;
+    }
+
+    .form-submit input {
+        margin-bottom: 15px;
+    }
+
+    .form-submit {
+        margin-bottom: 60px;
     }
 }
