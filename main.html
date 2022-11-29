@@ -21,10 +21,8 @@
                 <li><a href="projects.html"></a>Projects</li>
                 <li><a href="services.html"></a>Services</li>
             </ul>
-            <button class="menu-mobile" hidden>
-                <span></span>
-                <span></span>
-                <span></span>
+            <button class="menu-mobile">
+                <img id="hamburger-menu" src="images/more.png" alt="Hamburger Menu">
             </button>
             <button class="contact-us">
                 <a href="contact-us.html">Contact Us</a>
@@ -40,7 +38,6 @@
                     <a href="">Get in touch</a>
                 </button> 
                 <button id="see-work"><a href="">See our work</a></button>
-                
             </div>
             
         </div>
@@ -67,10 +64,10 @@
             <article class="projects">
                 <img class="article-image" src="images/projects-section/1.jpg" alt="Project 1">
                 <div class="article-text">
-                    <h3>Simplify</h3>
+                    <h3 id="h3-1-project">Simplify</h3>
                     <p>UI Design & App Development</p>
                     <button class="learn-more">
-                        <a href="">Learn More</a>
+                        <a href="project-page.html">Learn More</a>
                     </button> 
                 </div>
             </article>
@@ -80,7 +77,7 @@
                     <h3>Simplify</h3>
                     <p>UI Design & App Development</p>
                     <button class="learn-more">
-                        <a href="">Learn More</a>
+                        <a href="project-page.html">Learn More</a>
                     </button> 
                 </div>
             </article>
@@ -90,7 +87,7 @@
                     <h3>Simplify</h3>
                     <p>UI Design & App Development</p>
                     <button class="learn-more">
-                        <a href="">Learn More</a>
+                        <a href="project-page.html">Learn More</a>
                     </button> 
                 </div>
             </article>
@@ -156,19 +153,19 @@
             </article>
         </div>
     </div>
-    <form class="email flex">
+    <form action="/main.html" method="post" class="email flex">
         <div class="email-box">
             <h2>Do you have any questions?</h2>
             <p>Let us help you!</p>
             <div class="subscribe-email flex">
                 <div class="email-input flex center">
                     <img id="envelope-icon" src="images/newsletter/icon/mail.svg" alt="Envelope Icon">
-                    <input type="email" name="Email" id="enter-email" placeholder="Enter your email">
+                    <input type="email" name="Email" id="enter-email" placeholder="Enter your email" required>
+                    <small></small>
                 </div>
                 <input id="subscribe-button" type="submit" value="Subscribe">
             </div>  
         </div>
-        
     </form>
     <footer class="flex space-between width footer">
         <div>

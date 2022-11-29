@@ -97,6 +97,15 @@ nav > div {
     font-size: 17px;
 }
 
+.menu-mobile {
+    border: none;
+}
+
+#hamburger-menu {
+    background-color: #F2F4FC;
+    width: 30px;
+}
+
 /*Hero Section*/
 
 .header {
@@ -451,7 +460,7 @@ nav > div {
     margin: 0 auto 20px auto;
 }
 
-.project-description h3, p {
+.project-description h3, .project-description p {
     margin: 0;
     color: #6B708D;
     line-height: 150%;
