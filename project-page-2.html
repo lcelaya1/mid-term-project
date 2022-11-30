@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Page</title>
+    <title>Project Page 2</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,52 +32,50 @@
         </div> 
     </nav>
     <header class="width project-description">
-        <h1>Simplify</h1>
+        <h1 id="h1-full-page-project-2"></h1>
         <div class="flex space-between inner-project">
-           <h3>UI Design & App Development</h3>
-           <p><span id="completed-on">Completed on </span>June 22, 2021</p>
+           <h3 id="h3-full-page-project-2"></h3>
+           <p><span id="completed-on">Completed on </span><span id="date-full-page-project-2"></span></p>
         </div>
-        <img class="project-image" src="images/projects-section/1.jpg" alt="Project Image">
-        <p>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi. Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt quix duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.</p>
-        <br>
-        <p>Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad e dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nisi.Aliqua id fugiat nostrud irure ex duis ea quis id quis ad e dolore cillum minim tempor enim. Elit aute irure tempor cupidatat incididunt sint deserunt ut voluptate aute id deserunt nis cillum minim tempor enim. </p>
+        <div id="img-full-page-project-2" class="project-image flex"></div>
+        <div id="brief-full-page-project-2"></div>
     </header>
     <div class="recent-project width">
-        <h2>Other Projects</h2>
+        <h2>Recent Projects</h2>
         <div class="flex space-between">
             <article class="projects">
-                <img class="article-image" src="images/projects-section/1.jpg" alt="Project 1">
+                <div id="article-image-1" class="article-image"></div>
                 <div class="article-text">
-                    <h3 id="h3-1-project">Simplify</h3>
-                    <p>UI Design & App Development</p>
+                    <h3 id="h3-1-project"></h3>
+                    <p id="date-1"></p>
                     <button class="learn-more">
-                        <a href="project-page.html">Learn More</a>
+                        <a href="project-page-1.html">Learn More</a>
                     </button> 
                 </div>
             </article>
             <article class="projects">
-                <img class="article-image" src="images/projects-section/1.jpg" alt="Project 1">
+                <div id="article-image-3" class="article-image"></div>
                 <div class="article-text">
-                    <h3>Simplify</h3>
-                    <p>UI Design & App Development</p>
+                    <h3 id="h3-3-project"></h3>
+                    <p id="date-3"></p>
                     <button class="learn-more">
-                        <a href="project-page.html">Learn More</a>
+                        <a href="project-page-3.html">Learn More</a>
                     </button> 
                 </div>
             </article>
             <article class="projects">
-                <img class="article-image" src="images/projects-section/1.jpg" alt="Project 1">
+                <div id="article-image-4" class="article-image"></div>
                 <div class="article-text">
-                    <h3>Simplify</h3>
-                    <p>UI Design & App Development</p>
+                    <h3 id="h3-4-project"></h3>
+                    <p id="date-4"></p>
                     <button class="learn-more">
-                        <a href="project-page.html">Learn More</a>
+                        <a href="project-page-4.html">Learn More</a>
                     </button> 
                 </div>
             </article>
         </div>
     </div>
-    <form class="email flex">
+    <form onsubmit="sendEmail()" class="email flex center">
         <div class="email-box">
             <h2>Do you have any questions?</h2>
             <p>Let us help you!</p>
@@ -85,12 +83,13 @@
                 <div class="email-input flex center">
                     <img id="envelope-icon" src="images/newsletter/icon/mail.svg" alt="Envelope Icon">
                     <input type="email" name="Email" id="enter-email" placeholder="Enter your email" required>
-                    <small></small>
                 </div>
                 <input id="subscribe-button" type="submit" value="Subscribe">
-            </div>  
+            </div>
+            <div class="error-form">
+                <p>Oops! Something went wrong while submitting the form.</p>
+            </div>
         </div>
-        
     </form>
     <footer class="flex space-between width footer">
         <div>

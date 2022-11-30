@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Page 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <nav class="width">
+        <div class="flex center space-between">
+            <a href="main.html"><img id="circle" src="images/logos/circle.svg" alt="Circle Logo"></a>
+            <ul class="nav-menu list flex">
+                <li><a href="main.html"></a>Home</li>
+                <li><a href="projects.html"></a>Projects</li>
+                <li><a href="services.html"></a>Services</li>
+            </ul>
+            <button class="menu-mobile" hidden>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button class="contact-us">
+                <a href="contact-us.html">Contact Us</a>
+            </button>
+        </div> 
+    </nav>
+    <header class="width project-description">
+        <h1 id="h1-full-page-project-1"></h1>
+        <div class="flex space-between inner-project">
+           <h3 id="h3-full-page-project-1"></h3>
+           <p><span id="completed-on">Completed on </span><span id="date-full-page-project-1"></span></p>
+        </div>
+        <div id="img-full-page-project-1" class="project-image flex"></div>
+        <div id="brief-full-page-project-1"></div>
+    </header>
+    <div class="recent-project width">
+        <h2>Recent Projects</h2>
+        <div class="flex space-between">
+            <article class="projects">
+                <div id="article-image-2" class="article-image"></div>
+                <div class="article-text">
+                    <h3 id="h3-2-project"></h3>
+                    <p id="date-2"></p>
+                    <button class="learn-more">
+                        <a href="project-page-2.html">Learn More</a>
+                    </button> 
+                </div>
+            </article>
+            <article class="projects">
+                <div id="article-image-3" class="article-image"></div>
+                <div class="article-text">
+                    <h3 id="h3-3-project"></h3>
+                    <p id="date-3"></p>
+                    <button class="learn-more">
+                        <a href="project-page-3.html">Learn More</a>
+                    </button> 
+                </div>
+            </article>
+            <article class="projects">
+                <div id="article-image-4" class="article-image"></div>
+                <div class="article-text">
+                    <h3 id="h3-4-project"></h3>
+                    <p id="date-4"></p>
+                    <button class="learn-more">
+                        <a href="project-page-4.html">Learn More</a>
+                    </button> 
+                </div>
+            </article>
+        </div>
+    </div>
+    <form onsubmit="sendEmail()" class="email flex center">
+        <div class="email-box">
+            <h2>Do you have any questions?</h2>
+            <p>Let us help you!</p>
+            <div class="subscribe-email flex">
+                <div class="email-input flex center">
+                    <img id="envelope-icon" src="images/newsletter/icon/mail.svg" alt="Envelope Icon">
+                    <input type="email" name="Email" id="enter-email" placeholder="Enter your email" required>
+                </div>
+                <input id="subscribe-button" type="submit" value="Subscribe">
+            </div>
+            <div class="error-form">
+                <p>Oops! Something went wrong while submitting the form.</p>
+            </div>
+        </div>
+    </form>
+    <footer class="flex space-between width footer">
+        <div>
+            <img id="circle" src="images/logos/circle.svg" alt="Circle Logo">
+            <p id="footer-p">2972 Westheimer Rd. Santa Ana, Illinois 85486 </p>
+        </div>
+        <nav id="footer-nav" class="flex space-between">
+            <ul class="nav-menu footer-menu list flex">
+                <li><a href="#"></a>Team</li>
+                <li><a href="#"></a>Press</li>
+            </ul>
+            <ul class="nav-menu footer-menu list flex">
+                <li><a href="services.html"></a>Services</li>
+                <li><a href="projects.html"></a>Projects</li>
+            </ul>
+            <ul class="nav-menu footer-menu list flex">
+                <li><a href="#"></a>About Us</li>
+                <li><a href="#"></a>Privacy Policy</li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>

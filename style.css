@@ -97,13 +97,26 @@ nav > div {
     font-size: 17px;
 }
 
-.menu-mobile {
-    border: none;
+.hamburger-section {
+    position: relative;
+    height: 50px;
 }
 
-#hamburger-menu {
-    background-color: #F2F4FC;
-    width: 30px;
+.menu-mobile {
+    border: none;
+    position: absolute;
+    z-index: 100;
+    cursor: pointer;
+    top: 25%;
+    right: 0%;
+}
+
+.hamburger-menu {
+    width: 25px;
+}
+
+.show-menu {
+    transform: translateY(0);
 }
 
 /*Hero Section*/
@@ -212,10 +225,11 @@ nav > div {
     font-size: 17px;
 }
 
-.article-image {
+.article-image > img {
     width: 340px;
     height: 240px;
-    object-fit: cover;
+    object-fit: contain;
+    margin-top: 20px;
 }
 
 /*Reviews*/
@@ -339,7 +353,6 @@ nav > div {
     background-color: #FFC600;
     height: 500px;
     text-align: center;
-    flex-direction: column;
     justify-content: center;
     margin-bottom: 170px;
 }
@@ -384,6 +397,20 @@ nav > div {
     padding: 29px 61px;
     color: #F2F4FC;
     font-size: 17px;
+}
+
+.error-form {
+    display: none;
+    background-color: #ffdede;
+    margin-top: 10px;
+    padding: 10px 30px;
+    text-align: left;
+    color: #6B708D;
+    font-size: 14px;
+}
+
+.error-form > p {
+    margin: 0;
 }
 
 /*Footer*/
@@ -460,7 +487,7 @@ nav > div {
     margin: 0 auto 20px auto;
 }
 
-.project-description h3, .project-description p {
+.project-description h3, #brief-full-page-project-1, #date-full-page-project-1 {
     margin: 0;
     color: #6B708D;
     line-height: 150%;
@@ -474,10 +501,10 @@ nav > div {
     color: #292E47;
 }
 
-.project-image {
+.project-image > img {
     width: 100%;
     height: 444px;
-    object-fit: cover;
+    object-fit: contain;
     margin-bottom: 70px;
 }
 
@@ -506,6 +533,18 @@ nav > div {
     nav > div {
         padding: 18px 0;
         margin-top: 0;
+    }
+
+    .hamburger-section {
+        display: block;
+    }
+
+    .contact-us {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
     }
 
     /*Header*/

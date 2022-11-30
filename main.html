@@ -13,20 +13,22 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <nav class="width">
+    <nav class="width height-nav">
         <div class="flex center space-between">
             <a href="main.html"><img id="circle" src="images/logos/circle.svg" alt="Circle Logo"></a>
             <ul class="nav-menu list flex">
-                <li><a href="main.html"></a>Home</li>
-                <li><a href="projects.html"></a>Projects</li>
-                <li><a href="services.html"></a>Services</li>
+                <li><a class="nav-menu-item" href="main.html"></a>Home</li>
+                <li><a class="nav-menu-item" href="projects.html"></a>Projects</li>
+                <li><a class="nav-menu-item" href="services.html"></a>Services</li>
             </ul>
-            <button class="menu-mobile">
-                <img id="hamburger-menu" src="images/more.png" alt="Hamburger Menu">
-            </button>
             <button class="contact-us">
                 <a href="contact-us.html">Contact Us</a>
             </button>
+            <div class="hamburger-section" hidden>
+                <a href="javascript:void(0);" class="menu-mobile" onclick="toggleMenu()">
+                    <img id="hamburger-open" class="hamburger-menu" src="images/more.png" alt="Hamburger Menu Open">
+                </a>
+            </div>
         </div> 
     </nav>
     <header class="flex width center header">
@@ -62,32 +64,32 @@
         <h2>Recent Projects</h2>
         <div class="flex space-between">
             <article class="projects">
-                <img class="article-image" src="images/projects-section/1.jpg" alt="Project 1">
+                <div id="article-image-1" class="article-image"></div>
                 <div class="article-text">
-                    <h3 id="h3-1-project">Simplify</h3>
-                    <p>UI Design & App Development</p>
+                    <h3 id="h3-1-project"></h3>
+                    <p id="date-1"></p>
                     <button class="learn-more">
-                        <a href="project-page.html">Learn More</a>
+                        <a href="project-page-1.html">Learn More</a>
                     </button> 
                 </div>
             </article>
             <article class="projects">
-                <img class="article-image" src="images/projects-section/1.jpg" alt="Project 1">
+                <div id="article-image-2" class="article-image"></div>
                 <div class="article-text">
-                    <h3>Simplify</h3>
-                    <p>UI Design & App Development</p>
+                    <h3 id="h3-2-project"></h3>
+                    <p id="date-2"></p>
                     <button class="learn-more">
-                        <a href="project-page.html">Learn More</a>
+                        <a href="project-page-2.html">Learn More</a>
                     </button> 
                 </div>
             </article>
             <article class="projects">
-                <img class="article-image" src="images/projects-section/1.jpg" alt="Project 1">
+                <div id="article-image-3" class="article-image"></div>
                 <div class="article-text">
-                    <h3>Simplify</h3>
-                    <p>UI Design & App Development</p>
+                    <h3 id="h3-3-project"></h3>
+                    <p id="date-3"></p>
                     <button class="learn-more">
-                        <a href="project-page.html">Learn More</a>
+                        <a href="project-page-3.html">Learn More</a>
                     </button> 
                 </div>
             </article>
@@ -152,8 +154,8 @@
                 </div>
             </article>
         </div>
-    </div>
-    <form action="/main.html" method="post" class="email flex">
+    </div> 
+    <form onsubmit="sendEmail()" class="email flex center">
         <div class="email-box">
             <h2>Do you have any questions?</h2>
             <p>Let us help you!</p>
@@ -161,10 +163,12 @@
                 <div class="email-input flex center">
                     <img id="envelope-icon" src="images/newsletter/icon/mail.svg" alt="Envelope Icon">
                     <input type="email" name="Email" id="enter-email" placeholder="Enter your email" required>
-                    <small></small>
                 </div>
                 <input id="subscribe-button" type="submit" value="Subscribe">
-            </div>  
+            </div>
+            <div class="error-form">
+                <p>Oops! Something went wrong while submitting the form.</p>
+            </div>
         </div>
     </form>
     <footer class="flex space-between width footer">
