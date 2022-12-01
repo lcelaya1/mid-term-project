@@ -10,23 +10,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="index.js"></script>
 </head>
 <body>
     <nav class="width height-nav">
         <div class="flex center space-between">
-            <a href="main.html"><img id="circle" src="images/logos/circle.svg" alt="Circle Logo"></a>
-            <ul class="nav-menu list flex">
-                <li><a class="nav-menu-item" href="main.html"></a>Home</li>
-                <li><a class="nav-menu-item" href="projects.html"></a>Projects</li>
-                <li><a class="nav-menu-item" href="services.html"></a>Services</li>
-            </ul>
-            <button class="contact-us">
-                <a href="contact-us.html">Contact Us</a>
-            </button>
+            <div class="flex space-between menu-section">
+                <a href="main.html"><img id="circle" src="images/logos/circle.svg" alt="Circle Logo"></a>
+                <ul class="nav-menu list flex">
+                    <li><a class="nav-menu-item" href="main.html"></a>Home</li>
+                    <li><a class="nav-menu-item" href="projects.html"></a>Projects</li>
+                    <li><a class="nav-menu-item" href="services.html"></a>Services</li>
+                </ul>
+                <button class="contact-us">
+                    <a href="contact-us.html">Contact Us</a>
+                </button>
+            </div>
             <div class="hamburger-section" hidden>
                 <a href="javascript:void(0);" class="menu-mobile" onclick="toggleMenu()">
-                    <img id="hamburger-open" class="hamburger-menu" src="images/more.png" alt="Hamburger Menu Open">
+                    <i id="hamburger-open" class="fa fa-bars"></i>
                 </a>
             </div>
         </div> 

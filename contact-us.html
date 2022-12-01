@@ -13,27 +13,29 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <nav class="width">
+    <nav class="width height-nav">
         <div class="flex center space-between">
-            <a href="main.html"><img id="circle" src="images/logos/circle.svg" alt="Circle Logo"></a>
-            <ul class="nav-menu list flex">
-                <li><a href="main.html"></a>Home</li>
-                <li><a href="projects.html"></a>Projects</li>
-                <li><a href="services.html"></a>Services</li>
-            </ul>
-            <button class="menu-mobile" hidden>
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <button class="contact-us">
-                <a href="contact-us.html">Contact Us</a>
-            </button>
+            <div class="flex space-between menu-section">
+                <a href="main.html"><img id="circle" src="images/logos/circle.svg" alt="Circle Logo"></a>
+                <ul class="nav-menu list flex">
+                    <li><a class="nav-menu-item" href="main.html"></a>Home</li>
+                    <li><a class="nav-menu-item" href="projects.html"></a>Projects</li>
+                    <li><a class="nav-menu-item" href="services.html"></a>Services</li>
+                </ul>
+                <button class="contact-us">
+                    <a href="contact-us.html">Contact Us</a>
+                </button>
+            </div>
+            <div class="hamburger-section" hidden>
+                <a href="javascript:void(0);" class="menu-mobile" onclick="toggleMenu()">
+                    <i id="hamburger-open" class="fa fa-bars"></i>
+                </a>
+            </div>
         </div> 
     </nav>
     <header class="width contact-forms">
         <h1>Contact Us</h1>
-        <form class="width">
+        <form class="width" onsubmit="sendEmail()">
             <div class="flex form-submit">
                 <label for="full-name">Full Name *</label>
                 <input id="full-name" type="text" name="Full Name" placeholder="Enter your full name" required>
@@ -50,6 +52,9 @@
                 <label for="message">Message *</label>
                 <input id="message" type="text" name="Message" placeholder="Write your message here..." required>
                 <input id="subscribe-button" type="submit" value="Submit">
+            </div>
+            <div class="error-form">
+                <p>Oops! Something went wrong while submitting the form.</p>
             </div>
         </form>
     </header>

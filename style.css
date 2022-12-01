@@ -82,6 +82,10 @@ nav > div {
     color: #43D2FF;
 }
 
+.menu-section {
+    width: 100%;
+}
+
 .contact-us, .get-in-touch {
     background-color: #072AC8;
     padding: 15px 30px;
@@ -98,25 +102,21 @@ nav > div {
 }
 
 .hamburger-section {
-    position: relative;
     height: 50px;
 }
 
 .menu-mobile {
+    display: block;
     border: none;
     position: absolute;
     z-index: 100;
     cursor: pointer;
-    top: 25%;
-    right: 0%;
+    top: 5%;
+    right: 10%;
 }
 
 .hamburger-menu {
     width: 25px;
-}
-
-.show-menu {
-    transform: translateY(0);
 }
 
 /*Hero Section*/
@@ -545,6 +545,22 @@ nav > div {
 
     .nav-menu {
         display: none;
+        background-color: #F2F4FC;
+        padding: 0;
+        width: 100%;
+    }
+
+    .nav-menu > li {
+        padding: 0;
+        padding: 14px 16px;
+    }
+
+    .menu-section a {
+        display: block;
+    }
+
+    .menu-section {
+        flex-direction: column;
     }
 
     /*Header*/

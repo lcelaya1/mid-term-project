@@ -1,10 +1,5 @@
-const menu = document.querySelector(".nav-menu");
-const menuItems = document.querySelectorAll(".nav-menu-item");
-const hamburger = document.querySelector(".menu-mobile");
-const closeIcon = document.querySelector("#hamburger-close");
-const openIcon = document.querySelector("#hamburger-open");
-
 function toggleMenu() {
+    const menu = document.querySelector(".nav-menu");
     if (menu.style.display === "block") {
         menu.style.display = "none";
       } else {
@@ -122,14 +117,12 @@ insertH1("5eb87cd9ffd86e000604b32a", "h1-full-page-project-1");
 insertSuccess("5eb87cd9ffd86e000604b32a", "h3-full-page-project-1");
 insertDate("5eb87cd9ffd86e000604b32a", "date-full-page-project-1");
 insertImg("5eb87cd9ffd86e000604b32a", "img-full-page-project-1");
-insertImg("5eb87cd9ffd86e000604b32a", "img-full-page-project-1");
 insertBrief("5eb87cdbffd86e000604b32c", "brief-full-page-project-1")
 
 /* Full Page Project 2 */
 insertH1("5eb87cdaffd86e000604b32b", "h1-full-page-project-2");
 insertSuccess("5eb87cdaffd86e000604b32b", "h3-full-page-project-2");
 insertDate("5eb87cdaffd86e000604b32b", "date-full-page-project-2");
-insertImg("5eb87cdaffd86e000604b32b", "img-full-page-project-2");
 insertImg("5eb87cdaffd86e000604b32b", "img-full-page-project-2");
 insertBrief("5eb87cdaffd86e000604b32b", "brief-full-page-project-2")
 
@@ -138,13 +131,11 @@ insertH1("5eb87cdbffd86e000604b32c", "h1-full-page-project-3");
 insertSuccess("5eb87cdbffd86e000604b32c", "h3-full-page-project-3");
 insertDate("5eb87cdbffd86e000604b32c", "date-full-page-project-3");
 insertImg("5eb87cdbffd86e000604b32c", "img-full-page-project-3");
-insertImg("5eb87cdbffd86e000604b32c", "img-full-page-project-3");
 insertBrief("5eb87cdbffd86e000604b32c", "brief-full-page-project-3")
 
 /* Full Page Project 4 */
 insertH1("5eb87ceeffd86e000604b341", "h1-full-page-project-4");
 insertSuccess("5eb87ceeffd86e000604b341", "h3-full-page-project-4");
 insertDate("5eb87ceeffd86e000604b341", "date-full-page-project-4");
-insertImg("5eb87ceeffd86e000604b341", "img-full-page-project-4");
 insertImg("5eb87ceeffd86e000604b341", "img-full-page-project-4");
 insertBrief("5eb87ceeffd86e000604b341", "brief-full-page-project-4")
